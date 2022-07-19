@@ -1,0 +1,135 @@
+\documentclass{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{verbatim}	%多行注释用的包
+\usepackage{syntonly}	%可令LaTeX编译后不生成DVI或者PDF文档，只排查错误，加快编译速度
+\usepackage{multirow}	%multirow,multicolumn用的包
+\usepackage{amssymb}	%ams数字字库
+\usepackage{makeidx}	%索引宏包
+%\syntaxonly			
+%\frenchspacing 		能禁止在句号后插入额外的空白，它告诉LaTeX在句号后不要插入比正常字母更多的空白。
+%\use{makeidx}			激活索引命令
+%\linespread{1.3}		设置行间距，没错就是1.3这是1.5倍行距，两倍行距就是1.6咱也不知道为啥
+\begin{document}
+
+%单行注释
+
+%\tableofcontents	在该位置插入目录
+
+\begin{comment}
+多行注释
+多行注释
+多行注释
+\end{comment}
+
+%\\换行
+
+%\newpage开新页
+
+%\fbox{这是一个不换行的文本框}
+
+%波浪号$\sim$
+
+%省略号\ldots
+
+%禁止连字\mbox{}
+
+\begin{comment}
+\section{h1}
+\subsection{h2}
+\subsection*{h2} 带*表示不加小标题也不在目录中显示
+\end{comment}
+
+%这是一个脚注\footnote{this is a foot note}
+
+%\emph{斜体内容}
+
+\begin{comment}
+\begin{flushleft}
+左对齐
+\end{flushleft}
+
+\begin{flushright}
+右对齐
+\end{flushright}
+
+\begin{center}
+居中
+\end{center}
+\end{comment}
+
+\begin{comment}
+\begin{enumerate}
+	\item 有序列表1
+	\item 有序列表2
+	\begin{itemize}
+		\item 无序列表
+		\item[$\sim$] bbb
+	\end{itemize}
+	\begin{description}
+		\item[睿智] 带描述的列表 
+	\end{description}
+\end{enumerate}
+\end{comment}
+
+\begin{comment}
+\begin{flushleft}
+下面是一个很重要的东西
+\begin{quote}
+这是一个引用
+\end{quote}
+就这就这就这
+\end{flushleft}
+\end{comment}
+
+\begin{comment}
+\begin{verbatim}
+与下面等效
+\end{verbatim}
+正文内容\verb+逐字打印中间文字而不执行latex命令比如\usepackage{ctex}+正文内容
+\end{comment}
+
+\begin{comment}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{Multi-Row}&
+\multicolumn{2}{c|}{Multi-Column}&
+\multicolumn{2}{c|}{\multirow{2}{*}{Multi-RowandCol}} \\
+\cline{2-3}
+  & column-1&column-2 & \multicolumn{2}{c|}{}\\
+\hline
+label-1 & label-2&label-3 & label-4& label-5\\
+\hline
+\end{tabular}
+\end{comment}
+
+\begin{comment}
+$c^2=a^2+b^2$ 行内公式等于\begin{math}   \end{math}
+
+\[c^2=a^2+b^2\] 行间公式不带标号
+
+\begin{equation}\label{eq:gg}
+c^2=a^2+b^2
+\end{equation}	行间公式带标号
+Form (\ref{eq:gg}) we can conclude that \ldots
+
+\[x^2\geq0\qquad
+\textrm{for all }x\in\mathbb{R}
+\]
+
+$\alpha,\beta,\gamma,\delta,\lambda,\xi,\pi,\mu,\phi,\omega$
+
+$y=x^2,y'=2x,y''=2$
+
+\[
+	\lim_{x\rightarrow0}\frac{\sin x}{x}=1
+\]
+
+$\ldots,\cdots,\vdots,\ddots$
+\end{comment}
+
+
+\end{document}
+
+
+
